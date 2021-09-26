@@ -1,0 +1,23 @@
+#ifndef DOTS_H
+#define DOTS_H
+
+#include<iostream>
+
+
+/*
+Описать типы-структуры «точка на плоскости в декартовых координатах» и «точка на
+плоскости в полярных координатах».
+
+*/
+struct point
+{
+    double x; //Декартовы координаты
+    double y;
+};
+
+
+
+void print_deck(point d);//"Красвивый" вывод точки
+
+
+#endif // DOTS_H
