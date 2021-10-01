@@ -4,11 +4,11 @@
 using namespace std;
 class Human
 {
-public:
+private:
     string name;
     string sname;
     int year;
-
+public:
     Human();
     Human(string name, string sname, int year);
     void info();

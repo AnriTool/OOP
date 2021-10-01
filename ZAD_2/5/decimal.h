@@ -1,4 +1,4 @@
-#ifndef DECIMAL_H
+﻿#ifndef DECIMAL_H
 #define DECIMAL_H
 #include <iostream>
 using namespace std;
@@ -6,12 +6,10 @@ using namespace std;
 class Decimal
 {
 private:
+    	int numer; //Числитель
+   	int denum; //знаминатель
         void normal();
 public:
-    int numer; //Числитель
-    int denum; //знаминатель
-
-
     Decimal();
     Decimal(int numer, int denum);
     void info();
