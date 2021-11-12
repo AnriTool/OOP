@@ -14,21 +14,6 @@
 Описать перегруженный оператор «/», выполняющий деление всех элементов массива на
 число.
 
-
-
-
-    double a[10];
-    int i;
-public:
-    Real();
-    void info();
-    double operator*(double x);
-    double operator/(double x);
-
-    void add(double x);
-    void del(double x);
-};
-
 */
 
 
