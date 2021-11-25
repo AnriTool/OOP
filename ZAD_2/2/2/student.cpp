@@ -16,44 +16,35 @@
 дисциплинам (например, при наличии троек стипендия не выплачивается, при средней
 оценке от 4 до 4.5 – базовая стипендия, от 4.5 премия 50%, если все оценки 5 премия
 100%).
-
-
-    Student();
-    Student(string name, int cours, double mth, double pr, double his, double ec, double ph);
-    void info();
-    void step();
-
-
-
-
  */
 
 
-
+//Конструктор, без свойств(по умолчанию)
 Student::Student()
 {
   name = "empty";
   course = 0;
-  math = prog = phys = history = economic = 0;
+  math = 0 ;
+  prog = 0;
+  phys = 0;
+  history = 0;
+  economic = 0;
 }
-
-Student::Student(string name, int course, double mth, double pr, double his, double ec, double ph)
+//Конструктор со свойствами
+Student::Student(string name, int course, double math, double prog, double history, double economic, double phys)
 {
     this->name = name;
     this->course = course;
-    math = mth; prog = pr; phys = ph; history =  his; economic = ec;
+    this->math = math;
+    this->prog = prog;
+    this->phys = phys;
+    this->history =  history;
+    this->economic = economic;
 }
 
 void Student::info()
 {
-    cout<<"Name: "<<name<< endl;
-    cout<<"Course: "<<course<< endl;
-    cout<<"Assessments: "<< endl;
-    cout<<"     Math: "<<math<< endl;
-    cout<<"     History: "<<history<< endl;
-    cout<<"     Physic: "<<phys<< endl;
-    cout<<"     Programming: "<<prog<< endl;
-    cout<<"     Economic: "<<economic<< endl;
+    cout<<"Name: "<<name<<" Course: "<<course<<" Math: "<<math<<" History: "<<history<<" Physic: "<<phys <<" Programming: "<<prog<< " Economic: "<<economic<< endl;
 }
 
 void Student::step()

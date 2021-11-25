@@ -35,7 +35,7 @@ public:
 
 
     Student();
-    Student(string name, int course, double mth, double pr, double his, double ec, double ph);
+    Student(string name, int course, double math, double prog, double history, double economic, double phys);
     void info();
     void step();
 
