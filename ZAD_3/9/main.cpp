@@ -27,14 +27,13 @@ int main()
 {
     Symbol s1;
     Symbol s2("text");
-    Symbol *uk;
 
     s1.add('a');s1.add('b');s1.add('c');
     s2.del();
     s1.info(); s2.info();
     s1<<'b';
     s1.info();
-    s1>>s2;
+    s2 = s1>>s2;
     s1.info();
     s2.info();
 

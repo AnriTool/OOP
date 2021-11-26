@@ -49,11 +49,14 @@ void Symbol::operator<<(char c){
     mass.insert(mass.begin(),c);
 }
 
-void Symbol::operator>>(Symbol c){
-    string s = *
+Symbol Symbol::operator>>(Symbol c){
     c.mass = mass[0] + c.mass;
-    cout << c.mass << endl;
     mass.erase(mass.begin());
+    return c;
+}
+
+void Symbol::operator=(Symbol c){
+    mass = c.mass;
 }
 
 

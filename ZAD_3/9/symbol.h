@@ -26,7 +26,8 @@ public:
     void add(char c);
     void del();
     void operator<<(char c);
-    void operator>>(Symbol c);
+    Symbol operator>>(Symbol c);
+    void operator=(Symbol c);
 };
 
 #endif // SYMBOL_H
