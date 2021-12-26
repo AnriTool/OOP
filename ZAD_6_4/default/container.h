@@ -36,6 +36,8 @@ public:
 
     Cont::iterator begin();
     Cont::iterator end();
+    Cont::iterator rbegin();
+    Cont::iterator rend();
 
 };
 
@@ -135,6 +137,16 @@ typename Cont<T>::iterator Cont<T>::begin(){
 
 template<class T>
 typename Cont<T>::iterator Cont<T>::end(){
+    return iterator(size, this);
+}
+
+template<class T>
+typename Cont<T>::iterator Cont<T>::rbegin(){
+    return iterator(-1, this);
+}
+
+template<class T>
+typename Cont<T>::iterator Cont<T>::rend(){
     return iterator(size-1, this);
 }
 
