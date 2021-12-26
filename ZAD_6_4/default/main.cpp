@@ -37,7 +37,7 @@ int main()
         cout << *it << " ";
 
     cout << endl;
-    for (Cont<int>::iterator it = s1.end(); it > s1.begin(); --it)
+    for (Cont<int>::iterator it = s1.rend(); it > s1.rbegin(); --it)
         cout << *it << " ";
     cout << endl;
 
@@ -58,7 +58,7 @@ int main()
         rail.info();
     }
 
-    for (Cont<Railcar>::iterator it = r1.end(); it > r1.begin(); --it){
+    for (Cont<Railcar>::iterator it = r1.rend(); it > r1.rbegin(); --it){
         rail = *it;
         rail.info();
     }
